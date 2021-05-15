@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="kr.co.manty.feeds.ui.category"
+            name="Feeds">
+      </category>
+      <wizard
+            category="kr.co.manty.feeds.ui.category"
+            class="kr.co.manty.NewFeedWizard"
+            icon="icons/full/etool16/newfeed_wiz.gif"
+            id="kr.co.manty.NewFeedWizard"
+            name="New Feed">
+      </wizard>
+   </extension>
+
+</plugin>
