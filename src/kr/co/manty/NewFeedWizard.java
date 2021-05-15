@@ -25,6 +25,7 @@ public class NewFeedWizard extends Wizard implements INewWizard {
 	public static final String FEEDS_PROJECT = "bookmarks";
 	
 	private NewFeedWizardPage newFeedWizardPage = new NewFeedWizardPage();
+	private NewFeedPreviewWizardPage newFeedPreviewWizardPage = new NewFeedPreviewWizardPage();
 
 	@Override
 	public boolean performFinish() {
@@ -56,6 +57,7 @@ public class NewFeedWizard extends Wizard implements INewWizard {
 	@Override
 	public void addPages() {
 		addPage(newFeedWizardPage);
+		addPage(newFeedPreviewWizardPage);
 		setHelpAvailable(true);
 		setNeedsProgressMonitor(true);
 	}

@@ -15,5 +15,31 @@
             name="New Feed">
       </wizard>
    </extension>
+   <extension
+         point="org.eclipse.ui.navigator.navigatorContent">
+      <navigatorContent
+            contentProvider="kr.co.manty.FeedContentProvider"
+            id="kr.co.manty.feedNavigatorContent"
+            labelProvider="kr.co.manty.FeedLabelProvider"
+            name="Feed Navigator Content">
+         <triggerPoints>
+            <and>
+               <instanceof
+                     value="org.eclipse.core.resources.IResource">
+               </instanceof>
+               <test
+                     forcePluginActivation="true"
+                     property="org.eclipse.core.resources.extension"
+                     value="feeds">
+               </test>
+            </and></triggerPoints>
+         <possibleChildren>
+            <or>
+               <instanceof
+                     value="kr.co.manty.Feed">
+               </instanceof>
+            </or>
+         </possibleChildren></navigatorContent>
+   </extension>
 
 </plugin>
