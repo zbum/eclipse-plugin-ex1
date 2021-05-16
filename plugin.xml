@@ -41,5 +41,16 @@
             </or>
          </possibleChildren></navigatorContent>
    </extension>
+   <extension
+         point="org.eclipse.ui.navigator.viewer">
+      <viewerContentBinding
+            viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension
+                  pattern="kr.co.manty.feedNavigatorContent">
+            </contentExtension>
+         </includes>
+      </viewerContentBinding>
+   </extension>
 
 </plugin>

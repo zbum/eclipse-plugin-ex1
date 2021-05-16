@@ -4,8 +4,6 @@ public class Feed {
 	
 	private final String name;
 	private final String url;
-	
-	
 
 	public Feed(String name, String url) {
 		super();
@@ -13,17 +11,12 @@ public class Feed {
 		this.url = url;
 	}
 
-
-
 	public String getUrl() {
 		return url;
 	}
 
-
-
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return name;
 	}
 
 }
